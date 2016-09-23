@@ -1,0 +1,26 @@
+﻿{%extends "templates.html" %}
+{% block content %}
+<body>
+   
+    <form class="form-horizontal" action="{{url_for('login')}}" method="post" >
+      {% if form %} 
+        {{ form.hidden_tag() }}
+        <div class="form-group">
+          <label class="control-label col-md-4">User Name</label>
+            <div class="col-md-6">
+                <input class="form-control" type="text" name="name" placeholder="User Name" value="{{form.name}}" />
+            </div>
+        
+        </div>
+       
+     
+       <div class="col-md-8">
+           <button type="submit" class="btn btn-success btn-md">{{form.submit}}</button>
+       </div>
+        {% endif %}
+    </form>
+
+    
+</body>
+
+{% endblock %}

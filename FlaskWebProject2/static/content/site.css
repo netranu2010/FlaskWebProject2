@@ -1,0 +1,91 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#a{
+    text-align:center;
+    color:blue;
+}
+table{
+    width:100%;
+}
+.btn btn-success{
+    margin-left:50px;
+}
+
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+.navbar-default{
+    background-color:aquamarine;
+    font-size:20px;
+}
+.navbar-nav{
+    background-color:coral;
+    font-size:25px;
+    font-style:italic;
+    color:black;
+}
+.navbar-right{
+    background-color:red;
+    font-size:20px;
+    font-style:normal;
+    color:lightblue;
+}
+h1{
+    font-size:25px;
+    text-align:center;
+    color:crimson;
+    text-decoration:underline;
+    margin-bottom:4px;
+}
+.col-md-4{
+    font-size:20px;
+    font-style:italic;
+    text-decoration:underline;
+    text-align:center;
+    color:darkorange;
+}
+.col-md-6{
+    margin-bottom:4px;
+    margin-top:4px;
+    color:deepskyblue;
+    font-size:20px;
+    text-align:left;
+    text-align:justify;
+}

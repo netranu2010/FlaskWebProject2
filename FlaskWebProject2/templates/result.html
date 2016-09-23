@@ -1,0 +1,35 @@
+﻿{% extends "layout.html" %}
+{% block content %}
+<body>
+    <table id="table" border=1>
+        <tr>
+            <th>ID</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Contents</th>
+            
+        </tr>
+        
+        
+            {% for row in rows %}
+        <tr>
+            <td>
+                {{row["ID"]}}
+            </td>
+            <td>
+                {{row["StartDate"]}}
+            </td>
+            <td>
+                {{row["EndDate"]}}
+            </td>
+            <td>
+                {{row["Contents"]}}
+            </td>
+            
+            </tr>
+            {% endfor %}
+        
+       
+</table>
+</body>
+{% endblock %}

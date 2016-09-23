@@ -1,0 +1,31 @@
+﻿{% extends "templates.html" %}
+{%block content%}
+<html>
+<body>
+    <div class="body-content">
+        <h1>
+            {{a}}
+        </h1>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            Day 1
+        </div>
+        <div class="col-md-6">
+        {% for row in rows %}
+        {{row["Contents"]}}
+        {% endfor %}
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                Day 2
+            </div>
+            <div class="col-md-6">
+                {{b}}
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
+{% endblock %}
